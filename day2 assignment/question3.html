@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search an element in array of strings</title>
+</head>
+<body>
+    <h2>Searching an element </h2>
+    <input type="text" id="search">
+     <button onclick="search()">search</button>
+     <p id="result"></p>
+    <script>
+        function search(){
+            let arr=["laptop", "keyboard", "mouse", "mobile"]
+            var a = document.getElementById("search").value;
+            var b = arr.includes(a);
+            if(b)
+             document.getElementById("result").innerHTML = a + " is availabel in array";
+             else
+             document.getElementById("result").innerHTML = a + " is not availabel in arry";
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>convert min to second</title>
+</head>
+<body>
+    <h2>Converting Minutes to Seconds</h2>
+    <label>Enter a Number</label>
+    <input type="number" id="num" placeholder="minutes">
+    <button onclick="Convert()">Convert</button>
+    <!-- <p>Seconds</p> -->
+    <p id="print"></p>
+    <script>
+        function Convert(){
+            var min = document.getElementById("num").value;
+            var sec = min * 60;
+            document.getElementById("print").innerHTML = sec+"Seconds";
+        }
+    </script>
+</body>
+</html>
