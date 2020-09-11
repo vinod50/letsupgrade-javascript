@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div   align="center"; 
+          border="2px solid black">
+    <br/>
+    <br/>
+    <input name="text1" class="input_text" placeholder="enter text here"/>
+    <br/>
+    <br/>
+    <input name="text 2" class="input_text" placeholder="will be copied"/>
+    <br/>
+    <br/>
+    <button onclick="change()">copy</button>
+    <script>
+        function change(){
+    const elem=document.getElementsByClassName("input_text");
+    elem[1].value=elem[0].value;
+    console.log(vari);
+}
+    </script>
+
+   </div>
+    
+</body>
+</html>
